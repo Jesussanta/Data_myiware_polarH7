@@ -9,7 +9,7 @@ cnn = mysql.connector.connect(host="localhost", user="root",
         passwd="45237823", database="Data")
 #SELECT * FROM Data.polar where Name = 'Karla' and N > 160;
 cur = cnn.cursor()
-sql = "SELECT * FROM Data.polar WHERE Name = 'Karla'"
+sql = "SELECT * FROM Data.polar WHERE Name = 'Nubia'"
 cur.execute(sql)
 datos = cur.fetchall()
 cur.close()  

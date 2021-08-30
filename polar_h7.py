@@ -2,12 +2,11 @@ import sys
 import mysql.connector
 from datetime import datetime
 #INSERT INTO `Data`.`polar` (`Name`, `Time`, `Value`) VALUES ('Alejandro', '20:10:45', '60');
-Name="Karla"
+Name="Nubia"
 cnn = mysql.connector.connect(host="localhost", user="root", 
         passwd="45237823", database="Data")
 
 def saveData(data,time):
-    print("Data")
     cur = cnn.cursor()
     sql='''INSERT INTO `Data`.`polar` (`Name`, `Time`, `Value`) VALUES ('{}', '{}', '{}')'''.format(Name,time,data)
     cur.execute(sql)
