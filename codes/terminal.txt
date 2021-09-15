@@ -1,0 +1,34 @@
+sudo gatttool -b 00:22:D0:75:A7:4F --char-write-req --handle=0x0013 --value=0100 --listen | python3 polar_h7.py
+
+mosquitto_sub -t "outTopic" | python3 test.py 
+
+m1=prima dar
+m2=johana
+h1=david
+h2=juan
+h3=ordoñez
+m3=amiga larra
+h4=Cuy
+h5=Rocha
+h6=Jhoan
+m4= Laura
+h7 = Danny laura
+h8 = Danny
+m5= isabel ordoñez
+m6= Aleja
+m7 = camila
+m8 = susana
+m9 = hermana susana
+m10 = camila burbano
+h9 = hermano camila
+h10 = nixo
+ha1=kapoper
+ma1=a amiga isa
+ma2=isa
+ha2=palero
+ha3=elkin
+ha4=anuar
+ha5=diego
+ha6=mono
+m3=lina
+ha7=amigo lina

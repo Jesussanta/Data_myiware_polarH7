@@ -2,7 +2,7 @@ import sys
 import mysql.connector
 from datetime import datetime
 #INSERT INTO `Data`.`polar` (`Name`, `Time`, `Value`) VALUES ('Alejandro', '20:10:45', '60');
-Name="ma4"
+Name="m7"
 cnn = mysql.connector.connect(host="localhost", user="root", 
         passwd="45237823", database="Data")
 
@@ -27,10 +27,9 @@ try:
                 print("Data Myoware")       #Nos indica qeu se da inicio y ya llego la primera linea
             else:
                 hr=po.split("-")
-                min_s=str(int(int(hr[0])*1024/4095))
-                max_s=str(int(int(hr[1])*1024/4095))
+                print(hr)
                 saveData(hr[0],hr[1],now)
-                print(" Min:{} Max:{} Time: {}".format(min_s,max_s,now))  #Se escribe en cosola el valor de esta convercion 
+                print(" Min:{} Max:{} Time: {}".format(hr[0],hr[1],now))  #Se escribe en cosola el valor de esta convercion 
 
             buff = '' #Se vacia variable
 except KeyboardInterrupt: #Metodo de intorrupcion por teclado
