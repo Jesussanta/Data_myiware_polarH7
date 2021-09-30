@@ -2,33 +2,36 @@ sudo gatttool -b 00:22:D0:75:A7:4F --char-write-req --handle=0x0013 --value=0100
 
 mosquitto_sub -t "outTopic" | python3 test.py 
 
-m1=prima dar
-m2=johana
-h1=david
-h2=juan
-h3=ordoñez
-m3=amiga larra
-h4=Cuy
-h5=Rocha
-h6=Jhoan
-m4= Laura
-h7 = Danny laura
-h8 = Danny
-m5= isabel ordoñez
-m6= Aleja
-m7 = camila
-m8 = susana
-m9 = hermana susana
-m10 = camila burbano
-h9 = hermano camila
-h10 = nixo
-ha1=kapoper
-ma1=a amiga isa
-ma2=isa
-ha2=palero
-ha3=elkin
-ha4=anuar
-ha5=diego
-ha6=mono
-m3=lina
-ha7=amigo lina
++m1=prima dar    +           14:09:30    / 2484 ~
++m2=johana  & +               17:32:49    / 4491 ~
+-h1=david    &-               14:34:14    / 2839 ~
+||||||| h2=juan             F
+||||||| h3=ordoñez          F
++m3=amiga larra  +           20:01:00    / 5174
+-h4=Cuy      -   &            20:12:33    / 5492 ~
+-h5=Rocha         &           20:21:36    / 5802  ~  
+||||||| h6=Jhoan            F
++m4= Laura    &               15:15:16    / 8491    
+-h7 = Danny laura    -       15:28:15    / 8862 ~
+||||||| h8 = Danny          F
++m5= isabel ordoñez   &       18:08:31    / 9868  ~
+||||||| m6= Aleja           F
++m7 = camila                 15:26:28    / 8756    
++m8 = susana                 15:37:01    / 10748
+||||||| m9 = hermana susana   F     15:51:21    / 12831 ~
+||||||| m10 = camila burbano  F     16:28:42    / 11235
+-h9 = hermano camila         16:47:26    / 11573 
+||||||| h10 = nixo
+_______________________________________________________________________________
+
++| ma1=a amiga isa             15:35:59    / 12435
+-ha1=kapoper                 15:49:06    / 12696  ~
++| ma2=isa                     15:58:29    / 12915  B~
+||||||| ha2=palero             FF   16:07:16
+||||||| ha3=elkin             F     16:28:42    / 13542
+-ha4=anuar                   16:47:58    / 13790  B
+||||||| ha5=diego   F
+||||||| ha6=mono    F
++m3=lina                     17:48:04    / 14554 B
+-ha7=amigo lina              18:05:45    / 15169 B
++ma4=Andrea                  17:18:01    / 15543 B
