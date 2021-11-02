@@ -1,7 +1,6 @@
 import sys
 import mysql.connector
 from datetime import datetime
-#INSERT INTO `Data`.`polar` (`Name`, `Time`, `Value`) VALUES ('Alejandro', '20:10:45', '60');
 Name="ma4"
 cnn = mysql.connector.connect(host="localhost", user="root", 
         passwd="45237823", database="Data")

@@ -32,6 +32,6 @@ try:
                 print(" Min:{} Max:{} Time: {}".format(hr[0],hr[1],now))  #Se escribe en cosola el valor de esta convercion 
 
             buff = '' #Se vacia variable
-except KeyboardInterrupt: #Metodo de intorrupcion por teclado
+except KeyboardInterrupt: #Metodo de interrupcion por teclado
    sys.stdout.flush()
    pass
